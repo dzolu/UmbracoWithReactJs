@@ -487,6 +487,7 @@
     <Compile Include="Model Adapter\FooterHomeModelAdapter.cs" />
     <Compile Include="Model Adapter\HeroModelAdapter.cs" />
     <Compile Include="Model Adapter\HomeModelAdapter.cs" />
+    <Compile Include="Model Adapter\ImageModelAdapter.cs" />
     <Compile Include="Model Adapter\InitialStateModelAdapter.cs" />
     <Compile Include="Model Adapter\Interafaces\IModelAdapter.cs" />
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
@@ -505,6 +506,7 @@
     <Compile Include="Models\FooterHomeModel.cs" />
     <Compile Include="Models\HeroModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\ImageModel.cs" />
     <Compile Include="Models\InitialState.cs" />
     <Compile Include="Models\Interfaces\IExchangesResponseModel.cs" />
     <Compile Include="Models\MasterModel.cs" />
