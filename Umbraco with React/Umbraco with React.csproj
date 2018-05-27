@@ -474,6 +474,8 @@
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Extensions\EncodingExtansions.cs" />
+    <Compile Include="Extensions\PublishedContentExtansions.cs" />
     <Compile Include="Helpers\HttpContext.cs" />
     <Compile Include="Helpers\IHttpContext.cs" />
     <Compile Include="Model Adapter\BlogModelAdapter.cs" />
