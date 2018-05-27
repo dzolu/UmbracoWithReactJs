@@ -484,6 +484,7 @@
     <Compile Include="Model Adapter\ContentPageModelAdapter.cs" />
     <Compile Include="Model Adapter\DetailsModelModelAdapter.cs" />
     <Compile Include="Model Adapter\FeatureModelAdapter.cs" />
+    <Compile Include="Model Adapter\FooterHomeModelAdapter.cs" />
     <Compile Include="Model Adapter\InitialStateModelAdapter.cs" />
     <Compile Include="Model Adapter\Interafaces\IModelAdapter.cs" />
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
@@ -495,6 +496,7 @@
     <Compile Include="Models\ContentPageModel.cs" />
     <Compile Include="Models\DetailsModel.cs" />
     <Compile Include="Models\FeatureModel.cs" />
+    <Compile Include="Models\FooterHomeModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\InitialState.cs" />
     <Compile Include="Models\Interfaces\IExchangesResponseModel.cs" />
