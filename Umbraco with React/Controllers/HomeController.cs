@@ -1,8 +1,6 @@
-﻿using System.Web.Mvc;
-using Umbraco.Core.Models;
+﻿using Umbraco.Core.Models;
 using Umbraco_with_React.Models;
 using Umbraco_with_React.Model_Adapter.Interafaces;
-using ActionResult = System.Web.Mvc.ActionResult;
 
 namespace Umbraco_with_React.Controllers
 {
