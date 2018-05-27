@@ -491,6 +491,7 @@
     <Compile Include="Model Adapter\Interafaces\IModelAdapter.cs" />
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
     <Compile Include="Model Adapter\PeopleModelAdapter.cs" />
+    <Compile Include="Model Adapter\PersonModelAdapter.cs" />
     <Compile Include="Model Adapter\RequestModelAdapter.cs" />
     <Compile Include="Models\BlogModel.cs" />
     <Compile Include="Models\BlogPostModel.cs" />
