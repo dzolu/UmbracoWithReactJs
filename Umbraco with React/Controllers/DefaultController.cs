@@ -11,10 +11,13 @@ namespace Umbraco_with_React.Controllers
     public class DefaultController :  Umbraco.Web.Mvc.RenderMvcController
     {
         private readonly IModelAdapter<MasterModel> _masterModelAdapter;
+        protected readonly IModelAdapter<InitialState> InitialStateModelAdapter;
 
-        public DefaultController(IModelAdapter<MasterModel> masterModelAdapter)
+        public DefaultController(IModelAdapter<MasterModel> masterModelAdapter,
+            IModelAdapter<InitialState> initialStateModelAdapter)
         {
             _masterModelAdapter = masterModelAdapter;
+            InitialStateModelAdapter = initialStateModelAdapter;
         }
 
         public override ActionResult Index(RenderModel model)
@@ -23,23 +26,27 @@ namespace Umbraco_with_React.Controllers
             return isAjaxRequest  ?  AjaxRequest(model.Content) : NonAjaxRequest(model.Content);
         }
 
-        protected virtual ActionResult NonAjaxRequest(IPublishedContent content)
+
+        private ActionResult AjaxRequest(IPublishedContent content)
         {
-            var masterInitialState = _masterModelAdapter.Adapt(content);            
-            return View("Master", masterInitialState);
+            var initialState = CreateInitialState(content);
+            initialState.Request.IsAjaxRequest = true;
+            return Json(initialState, JsonRequestBehavior.AllowGet);
         }
 
-        protected virtual ActionResult AjaxRequest(IPublishedContent content)
+        private ActionResult NonAjaxRequest(IPublishedContent content)
         {
-            return Json(new { }, JsonRequestBehavior.AllowGet);
-        }
-
-        protected ActionResult NonAjaxRequest(InitialState initialState, IPublishedContent content)
-        {
+            var initialState = CreateInitialState(content);   
             var masterInitialState = _masterModelAdapter.Adapt(content);
             masterInitialState.InitialState = initialState;
             return View("Master", masterInitialState);
         }
        
+        protected virtual InitialState CreateInitialState(IPublishedContent content)
+        {
+            var initialState = InitialStateModelAdapter.Adapt(content);
+            return initialState;
+        }
+
     }
 }

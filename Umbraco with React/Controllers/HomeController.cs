@@ -8,40 +8,21 @@ namespace Umbraco_with_React.Controllers
 {
     public class HomeController : DefaultController
     {
-     
         private readonly IModelAdapter<HomeModel> _homeModelAdapter;
-        private readonly IModelAdapter<InitialState> _initialStateModelAdapter;
 
-
-        public HomeController(IModelAdapter<MasterModel> masterModelAdapter, 
-            IModelAdapter<HomeModel> homeModelAdapter,
-            IModelAdapter<InitialState> initialStateModelAdapter) : base(masterModelAdapter)
+        public HomeController(IModelAdapter<MasterModel> masterModelAdapter,
+            IModelAdapter<InitialState> initialStateModelAdapter,
+            IModelAdapter<HomeModel> homeModelAdapter) : base(masterModelAdapter, initialStateModelAdapter)
         {
             _homeModelAdapter = homeModelAdapter;
-            _initialStateModelAdapter = initialStateModelAdapter;
-        }
-        
-        protected override ActionResult AjaxRequest(IPublishedContent content)
-        {
-            var initialState = CreateInitialState(content);
-            initialState.Request.IsAjaxRequest = true;
-            return Json(initialState, JsonRequestBehavior.AllowGet);
         }
 
-       
-        protected override ActionResult NonAjaxRequest(IPublishedContent content)
+        protected override InitialState CreateInitialState(IPublishedContent content)
         {
-            var initialState = CreateInitialState(content);          
-            return base.NonAjaxRequest(initialState, content);
-
-        }
-        private InitialState CreateInitialState(IPublishedContent content)
-        {
-            var homeModel=_homeModelAdapter.Adapt(content);
-            var initialState = _initialStateModelAdapter.Adapt(content);
+            var homeModel = _homeModelAdapter.Adapt(content);
+            var initialState = InitialStateModelAdapter.Adapt(content);
             initialState.Content = homeModel;
             return initialState;
         }
-
     }
 }
