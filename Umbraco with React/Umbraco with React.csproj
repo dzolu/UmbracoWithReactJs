@@ -482,6 +482,7 @@
     <Compile Include="Model Adapter\BlogPostModelAdapter.cs" />
     <Compile Include="Model Adapter\ContactModelAdpater.cs" />
     <Compile Include="Model Adapter\ContentPageModelAdapter.cs" />
+    <Compile Include="Model Adapter\DetailsModelModelAdapter.cs" />
     <Compile Include="Model Adapter\InitialStateModelAdapter.cs" />
     <Compile Include="Model Adapter\Interafaces\IModelAdapter.cs" />
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
