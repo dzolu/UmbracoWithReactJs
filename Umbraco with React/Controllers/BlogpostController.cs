@@ -1,10 +1,11 @@
 ﻿using Umbraco.Core.Models;
 using Umbraco_with_React.Models;
+using Umbraco_with_React.Model_Adapter;
 using Umbraco_with_React.Model_Adapter.Interafaces;
 
 namespace Umbraco_with_React.Controllers
 {
-    public class BlogpostController:DefaultController
+    public class BlogpostController : DefaultController
     {
         private readonly IModelAdapter<BlogPostModel> _blogpostModelAdapter;
 
@@ -14,13 +15,13 @@ namespace Umbraco_with_React.Controllers
         {
             _blogpostModelAdapter = blogpostModelAdapter;
         }
+
         protected override InitialState CreateInitialState(IPublishedContent content)
         {
-            var blogModel=_blogpostModelAdapter.Adapt(content);
+            var blogPostModel = _blogpostModelAdapter.Adapt(content);
             var initialState = InitialStateModelAdapter.Adapt(content);
-            initialState.Content = blogModel;
+            initialState.Content = blogPostModel;
             return initialState;
         }
-        
     }
 }
