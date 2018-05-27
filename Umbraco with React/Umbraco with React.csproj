@@ -493,6 +493,7 @@
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
     <Compile Include="Model Adapter\PeopleModelAdapter.cs" />
     <Compile Include="Model Adapter\PersonModelAdapter.cs" />
+    <Compile Include="Model Adapter\ProductDetailsModelAdapter.cs" />
     <Compile Include="Model Adapter\ProductModelAdapter.cs" />
     <Compile Include="Model Adapter\ProductsModelAdapter.cs" />
     <Compile Include="Model Adapter\RequestModelAdapter.cs" />
@@ -514,6 +515,7 @@
     <Compile Include="Models\NavigationModel.cs" />
     <Compile Include="Models\PeopleModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
+    <Compile Include="Models\ProductDetailsModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\ProductsModel.cs" />
     <Compile Include="Models\RequestModel.cs" />
