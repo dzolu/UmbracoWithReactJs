@@ -24,11 +24,4 @@ namespace Umbraco_with_React.Controllers
             return initialState;
         }
     }
-
-    public class BlogpostController:DefaultController
-    {
-        public BlogpostController(IModelAdapter<MasterModel> masterModelAdapter, IModelAdapter<InitialState> initialStateModelAdapter) : base(masterModelAdapter, initialStateModelAdapter)
-        {
-        }
-    }
 }

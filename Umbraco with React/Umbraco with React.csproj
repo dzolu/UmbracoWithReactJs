@@ -464,6 +464,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\BlogpostController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IRenderContentHelperController.cs" />
@@ -474,6 +475,8 @@
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
     <Compile Include="Model Adapter\RequestModelAdapter.cs" />
     <Compile Include="Models\BlogModel.cs" />
+    <Compile Include="Models\BlogPostModel.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\ContentModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\InitialState.cs" />
