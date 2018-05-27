@@ -486,6 +486,7 @@
     <Compile Include="Model Adapter\FeatureModelAdapter.cs" />
     <Compile Include="Model Adapter\FooterHomeModelAdapter.cs" />
     <Compile Include="Model Adapter\HeroModelAdapter.cs" />
+    <Compile Include="Model Adapter\HomeModelAdapter.cs" />
     <Compile Include="Model Adapter\InitialStateModelAdapter.cs" />
     <Compile Include="Model Adapter\Interafaces\IModelAdapter.cs" />
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
