@@ -576,6 +576,7 @@
     <Content Include="app\build\static\media\default_index.88827167.ejs" />
     <Content Include="app\src\containerComponents\HomeContainer.jsx" />
     <Content Include="app\src\presentationComponents\Content.jsx" />
+    <Content Include="app\src\presentationComponents\FooterHome.jsx" />
     <Content Include="app\src\presentationComponents\Home.jsx" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
