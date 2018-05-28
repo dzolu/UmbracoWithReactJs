@@ -1,9 +1,9 @@
 ﻿using Umbraco.Core.Models;
 using Umbraco.Web;
-using Umbraco_with_React.Models;
-using Umbraco_with_React.Model_Adapter.Interafaces;
+using UmbracoWithReactJs.Models;
+using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
-namespace Umbraco_with_React.Model_Adapter
+namespace UmbracoWithReactJs.Model_Adapter
 {
     public class  FeatureModelAdapter:IModelAdapter<FeatureModel>
     {

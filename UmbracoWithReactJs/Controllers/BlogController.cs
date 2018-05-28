@@ -1,8 +1,8 @@
 ﻿using Umbraco.Core.Models;
-using Umbraco_with_React.Models;
-using Umbraco_with_React.Model_Adapter.Interafaces;
+using UmbracoWithReactJs.Models;
+using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
-namespace Umbraco_with_React.Controllers
+namespace UmbracoWithReactJs.Controllers
 {
     public class BlogController:DefaultController
     {

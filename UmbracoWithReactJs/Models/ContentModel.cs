@@ -1,4 +1,4 @@
-﻿namespace Umbraco_with_React.Models
+﻿namespace UmbracoWithReactJs.Models
 {
     public class ContentModel
     {

@@ -1,6 +1,6 @@
 ﻿using System.Net.Configuration;
 
-namespace Knowhere_CMS.Settings.Interfaces
+namespace UmbracoWithReactJs.Settings.Interfaces
 {
     public interface IAppSettings
     {

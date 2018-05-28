@@ -1,6 +1,4 @@
-﻿using System.Web.UI.WebControls;
-
-namespace Umbraco_with_React.Models
+﻿namespace UmbracoWithReactJs.Models
 {
     public class PersonModel : ContentModel
     {

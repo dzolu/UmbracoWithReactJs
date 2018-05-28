@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Umbraco_with_React.Models
+namespace UmbracoWithReactJs.Models
 {
     public class BlogPostModel:ContentModel
     {

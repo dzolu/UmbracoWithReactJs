@@ -1,7 +1,7 @@
-﻿namespace Umbraco_with_React.Models
-{
-    using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
+namespace UmbracoWithReactJs.Models
+{
     public class ProductModel : ContentModel
     {
         public ProductDetailsModel ProductDetails { get; set; }

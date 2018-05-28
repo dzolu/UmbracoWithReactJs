@@ -1,16 +1,16 @@
 ﻿using Umbraco.Core.Models;
 using Umbraco.Web;
-using Umbraco_with_React.Extensions;
-using Umbraco_with_React.Models;
-using Umbraco_with_React.Model_Adapter.Interafaces;
+using UmbracoWithReactJs.Extensions;
+using UmbracoWithReactJs.Models;
+using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
-namespace Umbraco_with_React.Model_Adapter
+namespace UmbracoWithReactJs.Model_Adapter
 {
-    public class DetailsModelModelAdapter : IModelAdapter<DetailsModel>
+    public class DetailsModelAdapter : IModelAdapter<DetailsModel>
     {
         private readonly IModelAdapter<ImageModel> _imageModelAdapter;
 
-        public DetailsModelModelAdapter(IModelAdapter<ImageModel> imageModelAdapter)
+        public DetailsModelAdapter(IModelAdapter<ImageModel> imageModelAdapter)
         {
             _imageModelAdapter = imageModelAdapter;
         }

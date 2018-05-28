@@ -1,11 +1,11 @@
 ﻿using Umbraco.Core.Models;
 using Umbraco.Web;
-using Umbraco_with_React.Models;
-using Umbraco_with_React.Model_Adapter.Interafaces;
+using UmbracoWithReactJs.Models;
+using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
-namespace Umbraco_with_React.Model_Adapter
+namespace UmbracoWithReactJs.Model_Adapter
 {
-    public class SocialModelModelAdapter : IModelAdapter<SocialModel>
+    public class SocialModelAdapter : IModelAdapter<SocialModel>
     {
         public SocialModel Adapt(IPublishedContent content)
         {

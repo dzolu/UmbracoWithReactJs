@@ -2,17 +2,22 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using React;
-using Umbraco_with_React;
+using React.AspNet;
+using Microsoft.AspNetCore.Http;
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(UmbracoWithReactJs.ReactConfig), "Configure")]
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ReactConfig), "Configure")]
-
-namespace Umbraco_with_React
+namespace UmbracoWithReactJs
 {
 	public static class ReactConfig
 	{
 		public static void Configure()
 		{
+			
+		
 			// If you want to use server-side rendering of React components, 
 			// add all the necessary JavaScript files here. This includes 
 			// your components as well as all of their dependencies.
@@ -28,38 +33,17 @@ namespace Umbraco_with_React
 			//ReactSiteConfiguration.Configuration
 			//	.SetLoadBabel(false)
 			//	.AddScriptWithoutTransform("~/Scripts/bundle.server.js")
-			try
-			{
+		
 				ReactSiteConfiguration.Configuration.SetUseDebugReact(true);
 				ReactSiteConfiguration.Configuration.SetReuseJavaScriptEngines(false);
 				ReactSiteConfiguration.Configuration
 					.SetLoadBabel(true)
-					.SetLoadReact(true);
-
-				//.AddScriptWithoutTransform("~/app/build/static/js/server.js");
-			}
-			catch (ReflectionTypeLoadException ex)
-			{
-				StringBuilder sb = new StringBuilder();
-				foreach (Exception exSub in ex.LoaderExceptions)
-				{
-					sb.AppendLine(exSub.Message);
-					FileNotFoundException exFileNotFound = exSub as FileNotFoundException;
-					if (exFileNotFound != null)
-					{                
-						if(!string.IsNullOrEmpty(exFileNotFound.FusionLog))
-						{
-							sb.AppendLine("Fusion Log:");
-							sb.AppendLine(exFileNotFound.FusionLog);
-						}
-					}
-					sb.AppendLine();
-				}
-				string errorMessage = sb.ToString();
+					.SetLoadReact(true)
+					.AddScriptWithoutTransform("~/app/build/static/js/server.js");
+			
 				//Display or log the error based on your application.
 			}
 			
 
 		}
 	}
-}
