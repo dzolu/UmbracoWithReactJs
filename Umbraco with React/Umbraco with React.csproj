@@ -468,24 +468,46 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContentPageController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IRenderContentHelperController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Extensions\EncodingExtansions.cs" />
+    <Compile Include="Extensions\PublishedContentExtansions.cs" />
     <Compile Include="Helpers\HttpContext.cs" />
     <Compile Include="Helpers\IHttpContext.cs" />
+    <Compile Include="Model Adapter\BlogModelAdapter.cs" />
+    <Compile Include="Model Adapter\BlogPostModelAdapter.cs" />
+    <Compile Include="Model Adapter\ContactModelAdpater.cs" />
+    <Compile Include="Model Adapter\ContentPageModelAdapter.cs" />
+    <Compile Include="Model Adapter\DetailsModelModelAdapter.cs" />
+    <Compile Include="Model Adapter\FeatureModelAdapter.cs" />
+    <Compile Include="Model Adapter\FooterHomeModelAdapter.cs" />
+    <Compile Include="Model Adapter\HeroModelAdapter.cs" />
+    <Compile Include="Model Adapter\HomeModelAdapter.cs" />
+    <Compile Include="Model Adapter\ImageModelAdapter.cs" />
     <Compile Include="Model Adapter\InitialStateModelAdapter.cs" />
     <Compile Include="Model Adapter\Interafaces\IModelAdapter.cs" />
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
+    <Compile Include="Model Adapter\PeopleModelAdapter.cs" />
+    <Compile Include="Model Adapter\PersonModelAdapter.cs" />
+    <Compile Include="Model Adapter\ProductDetailsModelAdapter.cs" />
+    <Compile Include="Model Adapter\ProductModelAdapter.cs" />
+    <Compile Include="Model Adapter\ProductsModelAdapter.cs" />
     <Compile Include="Model Adapter\RequestModelAdapter.cs" />
+    <Compile Include="Model Adapter\SocialModelModelAdapter.cs" />
     <Compile Include="Models\BlogModel.cs" />
     <Compile Include="Models\BlogPostModel.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\ContentModel.cs" />
     <Compile Include="Models\ContentPageModel.cs" />
+    <Compile Include="Models\DetailsModel.cs" />
+    <Compile Include="Models\FeatureModel.cs" />
+    <Compile Include="Models\FooterHomeModel.cs" />
+    <Compile Include="Models\HeroModel.cs" />
     <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\ImageModel.cs" />
     <Compile Include="Models\InitialState.cs" />
     <Compile Include="Models\Interfaces\IExchangesResponseModel.cs" />
     <Compile Include="Models\MasterModel.cs" />
@@ -493,9 +515,11 @@
     <Compile Include="Models\NavigationModel.cs" />
     <Compile Include="Models\PeopleModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
+    <Compile Include="Models\ProductDetailsModel.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\ProductsModel.cs" />
     <Compile Include="Models\RequestModel.cs" />
+    <Compile Include="Models\SocialModel.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -508,11 +532,11 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco" />
-    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco_Client" />
-    <Folder Include="App_Data\packages\created" />
-    <Folder Include="App_Data\TEMP\Install" />
-    <Folder Include="obj\Debug\TempPE" />
+    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco\" />
+    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco_Client\" />
+    <Folder Include="App_Data\packages\created\" />
+    <Folder Include="App_Data\TEMP\Install\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

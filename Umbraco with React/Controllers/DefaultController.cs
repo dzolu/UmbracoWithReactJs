@@ -13,6 +13,7 @@ namespace Umbraco_with_React.Controllers
         private readonly IModelAdapter<MasterModel> _masterModelAdapter;
         protected readonly IModelAdapter<InitialState> InitialStateModelAdapter;
 
+
         public DefaultController(IModelAdapter<MasterModel> masterModelAdapter,
             IModelAdapter<InitialState> initialStateModelAdapter)
         {
