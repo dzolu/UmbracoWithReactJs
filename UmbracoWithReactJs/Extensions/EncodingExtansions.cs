@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Umbraco_with_React.Extensions
+namespace UmbracoWithReactJs.Extensions
 {
     public static class EncodingExtansions
     {

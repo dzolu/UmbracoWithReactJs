@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Umbraco_with_React.Controllers
+namespace UmbracoWithReactJs.Controllers
 {
     public interface IRenderContentHelperController
     {

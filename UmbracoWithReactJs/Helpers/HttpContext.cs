@@ -1,4 +1,4 @@
-﻿namespace Umbraco_with_React.Helpers
+﻿namespace UmbracoWithReactJs.Helpers
 {
     public class  HttpContext : IHttpContext
     {

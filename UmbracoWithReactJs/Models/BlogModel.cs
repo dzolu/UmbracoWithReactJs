@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Umbraco_with_React.Models
+namespace UmbracoWithReactJs.Models
 {
     public class BlogModel:ContentModel
     {

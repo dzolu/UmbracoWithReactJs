@@ -7,13 +7,13 @@ using Examine;
 using Umbraco.Core;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
-using Umbraco_with_React.Controllers;
-using Umbraco_with_React.Helpers;
-using Umbraco_with_React.Models;
-using Umbraco_with_React.Model_Adapter;
-using Umbraco_with_React.Model_Adapter.Interafaces;
+using UmbracoWithReactJs.Controllers;
+using UmbracoWithReactJs.Helpers;
+using UmbracoWithReactJs.Models;
+using UmbracoWithReactJs.Model_Adapter;
+using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
-namespace Umbraco_with_React
+namespace UmbracoWithReactJs
 {
     public class UmbracoWithReactJsStartup : IApplicationEventHandler
     {

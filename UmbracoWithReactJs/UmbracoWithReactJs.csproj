@@ -14,8 +14,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Umbraco_with_React</RootNamespace>
-    <AssemblyName>Umbraco with React</AssemblyName>
+    <RootNamespace>UmbracoWithReactJs</RootNamespace>
+    <AssemblyName>UmbracoWithReactJs</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -771,9 +771,9 @@
   <ItemGroup>
     <Folder Include="App_Data\packages\created\" />
     <Folder Include="App_Data\TEMP\Install\" />
-    <Folder Include="ReacjJsApp\src\containerComponents" />
-    <Folder Include="ReacjJsApp\src\presentationComponents" />
-    <Folder Include="ReacjJsApp\src\styles" />
+    <Folder Include="ReacjJsApp\src\containerComponents\" />
+    <Folder Include="ReacjJsApp\src\presentationComponents\" />
+    <Folder Include="ReacjJsApp\src\styles\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

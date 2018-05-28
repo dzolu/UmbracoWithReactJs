@@ -1,7 +1,7 @@
 ﻿using Umbraco.Core.Models;
 using Umbraco.Web;
 
-namespace Umbraco_with_React.Extensions
+namespace UmbracoWithReactJs.Extensions
 {
     public static class PublishedContentExtansions{
         public static IPublishedContent GetTypedMediaByAlias(this IPublishedContent content, string name)
