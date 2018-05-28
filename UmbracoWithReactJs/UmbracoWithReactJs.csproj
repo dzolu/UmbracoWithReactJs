@@ -47,8 +47,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.8.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
-      <HintPath>..\packages\Autofac.4.8.1\lib\net45\Autofac.dll</HintPath>
+    <Reference Include="Autofac, Version=4.6.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
+      <HintPath>..\packages\Autofac.4.6.0\lib\net45\Autofac.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
@@ -653,6 +653,7 @@
     <Content Include="ReacjJsApp\src\ServerApp.js" />
     <Content Include="ReacjJsApp\src\store\configureStore.jsx" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
+    <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -700,6 +701,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\ReactConfig.cs" />
+    <Compile Include="App_Start\UmbracoWithReactJs.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\BlogpostController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -718,7 +720,7 @@
     <Compile Include="Model Adapter\BlogPostModelAdapter.cs" />
     <Compile Include="Model Adapter\ContactModelAdpater.cs" />
     <Compile Include="Model Adapter\ContentPageModelAdapter.cs" />
-    <Compile Include="Model Adapter\DetailsModelModelAdapter.cs" />
+    <Compile Include="Model Adapter\DetailsModelAdapter.cs" />
     <Compile Include="Model Adapter\FeatureModelAdapter.cs" />
     <Compile Include="Model Adapter\FooterHomeModelAdapter.cs" />
     <Compile Include="Model Adapter\HeroModelAdapter.cs" />
@@ -727,13 +729,14 @@
     <Compile Include="Model Adapter\InitialStateModelAdapter.cs" />
     <Compile Include="Model Adapter\Interafaces\IModelAdapter.cs" />
     <Compile Include="Model Adapter\MasterModelAdapter.cs" />
+    <Compile Include="Model Adapter\MetaDataModelAdapter.cs" />
     <Compile Include="Model Adapter\PeopleModelAdapter.cs" />
     <Compile Include="Model Adapter\PersonModelAdapter.cs" />
     <Compile Include="Model Adapter\ProductDetailsModelAdapter.cs" />
     <Compile Include="Model Adapter\ProductModelAdapter.cs" />
     <Compile Include="Model Adapter\ProductsModelAdapter.cs" />
     <Compile Include="Model Adapter\RequestModelAdapter.cs" />
-    <Compile Include="Model Adapter\SocialModelModelAdapter.cs" />
+    <Compile Include="Model Adapter\SocialModelAdapter.cs" />
     <Compile Include="Models\BlogModel.cs" />
     <Compile Include="Models\BlogPostModel.cs" />
     <Compile Include="Models\ContactModel.cs" />

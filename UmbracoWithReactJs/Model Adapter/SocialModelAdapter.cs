@@ -5,7 +5,7 @@ using Umbraco_with_React.Model_Adapter.Interafaces;
 
 namespace Umbraco_with_React.Model_Adapter
 {
-    public class SocialModelModelAdapter : IModelAdapter<SocialModel>
+    public class SocialModelAdapter : IModelAdapter<SocialModel>
     {
         public SocialModel Adapt(IPublishedContent content)
         {

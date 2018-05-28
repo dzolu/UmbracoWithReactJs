@@ -6,11 +6,11 @@ using Umbraco_with_React.Model_Adapter.Interafaces;
 
 namespace Umbraco_with_React.Model_Adapter
 {
-    public class DetailsModelModelAdapter : IModelAdapter<DetailsModel>
+    public class DetailsModelAdapter : IModelAdapter<DetailsModel>
     {
         private readonly IModelAdapter<ImageModel> _imageModelAdapter;
 
-        public DetailsModelModelAdapter(IModelAdapter<ImageModel> imageModelAdapter)
+        public DetailsModelAdapter(IModelAdapter<ImageModel> imageModelAdapter)
         {
             _imageModelAdapter = imageModelAdapter;
         }
