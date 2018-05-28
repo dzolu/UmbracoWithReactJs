@@ -6,6 +6,5 @@
         public string Description { get; set; }
         public string CallToActionCaption { get; set; }
         public string CallToActionLink { get; set; }
-        public string Address { get; set; }
     }
 }
