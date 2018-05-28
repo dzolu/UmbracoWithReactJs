@@ -1,6 +1,7 @@
 ﻿@using React.AspNet
 
 @inherits UmbracoViewPage<UmbracoWithReactJs.Models.MasterModel>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="frontpage theme-font-serif theme-color-earth">
 @Html.React("Components.App.default", new {initialState = Model.InitialState})
 <!-- Javascripts -->
 <script src="/app/build/static/js/main.js"></script>
