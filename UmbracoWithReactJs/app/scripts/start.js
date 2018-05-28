@@ -62,7 +62,7 @@ choosePort(HOST, DEFAULT_PORT)
       {
         '/': {
           target: {
-            host: "wl24.dev101.com/",
+            host: "wl24.dev101.com",
             protocol: "http",
             port: "80"
           },
