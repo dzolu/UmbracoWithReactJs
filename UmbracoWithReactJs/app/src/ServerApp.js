@@ -19,9 +19,9 @@ const App = (props) => {
         <Provider store={store}>
             <Router  location={props.initialState.Request.Location}>
                 <div>
-                    <div>
+                    <main>
                         <Route path="/" component={HomeContainer} exact></Route>
-                    </div>
+                    </main>
                 </div>
             </Router>
         </Provider>

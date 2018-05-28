@@ -10,11 +10,11 @@ const App = (props) => {
     return (
         <Provider store={store}>
             <Router>
-                <div>
+                <main>
                     <div>
                         <Route path="/" component={HomeContainer} exact></Route>
                     </div>
-                </div>
+                </main>
             </Router>
 
         </Provider>
