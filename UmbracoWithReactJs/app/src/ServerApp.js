@@ -5,27 +5,33 @@ import {
     Route
 } from 'react-router';
 
+import configureStore from "./store/configureStore";
+import {Provider} from "react-redux";
+import HomeContainer from "./containerComponents/HomeContainer"
 
+
+
+import PropTypes from "prop-types";
 
 const App = (props) => {
-  
+    const store = configureStore(props.initialState);
     return (
-  
-            <Router >
+        <Provider store={store}>
+            <Router  location={props.initialState.Request.Location}>
                 <div>
-                  <div>Hello world</div>
+                    <main>
+                        <Route path="/" component={HomeContainer} exact></Route>
+                    </main>
                 </div>
-               
             </Router>
-   
-    
+        </Provider>
     );
 
 };
 
-// App.propTypes={
-//     initialState: PropTypes.object.isRequired
-// };
+App.propTypes={
+    initialState: PropTypes.object.isRequired
+};
 
 
 

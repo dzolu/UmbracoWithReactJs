@@ -14,8 +14,7 @@ namespace UmbracoWithReactJs.Model_Adapter
                 Header = content.GetPropertyValue<string>("footerHeader"),
                 Description = content.GetPropertyValue<string>("footerDescription"),
                 CallToActionCaption = content.GetPropertyValue<string>("footerCTACaption"),
-                CallToActionLink = content.GetPropertyValue<string>("FooterCtalink"),
-                Address = content.GetPropertyValue<string>("footerAddress")
+                CallToActionLink = content.GetPropertyValue<string>("FooterCtalink")
             };
         }
     }

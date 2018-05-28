@@ -574,6 +574,11 @@
     <Content Include="app\build\static\js\server.js" />
     <Content Include="app\build\static\js\server.js.map" />
     <Content Include="app\build\static\media\default_index.88827167.ejs" />
+    <Content Include="app\src\containerComponents\HomeContainer.jsx" />
+    <Content Include="app\src\presentationComponents\Content.jsx" />
+    <Content Include="app\src\presentationComponents\FooterHome.jsx" />
+    <Content Include="app\src\presentationComponents\Hero.jsx" />
+    <Content Include="app\src\presentationComponents\Home.jsx" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
     <Content Include="App_Data\Logs\UmbracoTraceLog.TOMASZKOSZK3BB6.txt" />
@@ -667,6 +672,7 @@
     <Content Include="app\src\ServerApp.js" />
     <Content Include="app\src\store\configureStore.jsx" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
+    <Content Include="start.bat" />
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />

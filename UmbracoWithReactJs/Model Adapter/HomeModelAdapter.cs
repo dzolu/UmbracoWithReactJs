@@ -1,4 +1,5 @@
-﻿using Umbraco.Core.Models;
+﻿
+using Umbraco.Core.Models;
 using Umbraco.Web;
 using UmbracoWithReactJs.Models;
 using UmbracoWithReactJs.Model_Adapter.Interafaces;
@@ -20,10 +21,11 @@ namespace UmbracoWithReactJs.Model_Adapter
 
         public HomeModel Adapt(IPublishedContent content)
         {
+            
             return new HomeModel
             {
                 Hero = _heroModelAdapter.Adapt(content),
-                Content = content.GetPropertyValue<string>("bodyText"),
+                Content = content.GetGridHtml("bodyText", "bootstrap3-fluid").ToHtmlString() ,
                 FooterHomeModel = _footerModelAdapter.Adapt(content)
             };
         }
