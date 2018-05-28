@@ -16,7 +16,6 @@ const AjaxComponent = (WrappedComponent) => {
             }
         }
         componentDidMount() {
-            debugger;
             if (this.props.isAjaxRequest) {
                 axios.request({
                     url:this.props.location.pathname,
@@ -30,9 +29,7 @@ const AjaxComponent = (WrappedComponent) => {
                 }); 
                 return;
             }
-            debugger;
         this.props.ajaxContainerActions.updateAjaxRequestFlag(true);
-        console.log(this.props);
         }
 
         render() {
