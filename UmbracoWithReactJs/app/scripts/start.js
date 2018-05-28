@@ -38,7 +38,7 @@ if (!checkRequiredFiles([/* paths.appHtml,*/ paths.appIndexJs])) {
 }
 
 // Tools like Cloud9 rely on this.
-const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 3000;
+const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 57419;
 const HOST = process.env.HOST || '0.0.0.0';
 
 // We attempt to use the default port but if it is busy, we offer the user to
@@ -62,7 +62,7 @@ choosePort(HOST, DEFAULT_PORT)
       {
         '/': {
           target: {
-            host: "knowhere.dev001.com",
+            host: "wl24.dev101.com/",
             protocol: "http",
             port: "80"
           },
