@@ -12,19 +12,19 @@ class HomeContainer extends Component {
 
     render() {
         return (
-            
-           <Home/>
+            <Home {...this.props.content}/>
         );
     }
 }
 
 HomeContainer.propTypes = {
-//myPropTypes :PropTypes.string.require
+    content: PropTypes.object.isRequired,
+    
 };
 
 function mapStateToProps(state, ownPros) {
     return {
-        state: state
+        content: state.Content
     }
 }
 
