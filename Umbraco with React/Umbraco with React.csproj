@@ -468,7 +468,6 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\ContentPageController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IRenderContentHelperController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
@@ -533,11 +532,11 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco" />
-    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco_Client" />
-    <Folder Include="App_Data\packages\created" />
-    <Folder Include="App_Data\TEMP\Install" />
-    <Folder Include="obj\Debug\TempPE" />
+    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco\" />
+    <Folder Include="App_Data\NuGetBackup\20180527-160521\Umbraco_Client\" />
+    <Folder Include="App_Data\packages\created\" />
+    <Folder Include="App_Data\TEMP\Install\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
