@@ -4,6 +4,7 @@ import {bindActionCreators} from "redux"
 import PropTypes from 'prop-types';
 import Home from "../presentationComponents/Home";
 import * as actions from "./../actions/ajaxContainerActions";
+import AjaxComponent from "../HOC/AjaxComponent";
 
 class HomeContainer extends Component {
     constructor(props, context) {
@@ -34,4 +35,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(AjaxComponent(HomeContainer));
