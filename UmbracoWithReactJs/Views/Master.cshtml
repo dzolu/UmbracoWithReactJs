@@ -1,6 +1,6 @@
 ﻿@using React.AspNet
 
-@*@inherits UmbracoViewPage<UmbracoWithReactJs.Models.MasterModel>*@
+@inherits UmbracoViewPage<UmbracoWithReactJs.Models.MasterModel>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +9,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    @*<meta name="description" content="@Model.InitialState.MetaData.SiteDescription">*@
+    <meta name="description" content="@Model.InitialState.MetaData.SiteDescription">
 
-    @*<title>@Model.InitialState.MetaData.PageName | @Model.InitialState.MetaData.PageTitle</title>*@
+    <title>@Model.InitialState.MetaData.PageName | @Model.InitialState.MetaData.PageTitle</title>
 
     <!-- Fonts -->
     <link href="//fonts.googleapis.com/css?family=Merriweather:400,700,300,900" rel="stylesheet" type="text/css">
@@ -19,7 +19,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link href="~/app/build/static/css/main.2b68ed50.css" rel="stylesheet" />
+    <link rel="stylesheet" href="@Url.Content("~/css/umbraco-starterkit-style.css")"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,13 +29,13 @@
 </head>
 
 <body>
-@Html.React("Components.App.default", new { initialState = new { } })
+@Html.React("Components.App.default", new {initialState = Model.InitialState})
 <!-- Javascripts -->
-    <script src="/app/build/static/js/main.js"></script>
+<script src="/app/build/static/js/main.js"></script>
 @Html.ReactInitJavaScript()
- 
+
 
 <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
