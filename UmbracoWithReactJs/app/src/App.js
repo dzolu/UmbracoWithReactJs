@@ -6,7 +6,7 @@ import configureStore from "./store/configureStore";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer";
 const App = (props) => {
-    const store = configureStore(props.initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+    const store = configureStore(props.initialState);
     return (
         <Provider store={store}>
             <Router>
