@@ -41,7 +41,7 @@ Happy to hear from you. The project will be extended with an example of unit tes
 
 
 ## License MIT
-Copyright 2017 Tomasz Koszkul
+Copyright 2018 Tomasz Koszkul
 
 
 
