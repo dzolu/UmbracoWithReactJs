@@ -17,6 +17,25 @@ Built with love for our Umbraco friends to show the world how easy you can trans
 
 
 ## Technical Overview
+## Front-end ReactJs
+
+#Routing
+On the front, I'm using react routing 4 to manage the routes. Routing is very easy. I match the routes created by Umbraco. On click, it passes the hit route into Ajax component where all hard work begins
+
+#Initial state
+The initial state is an essential model for my implementation. It contains all information that has to be updated on route change. when you first time hit a website I will be wrapped into Master model. After you start using the routing on the website the server will only return the updated initial model. Model is easy to extend.
+
+#Redux 
+To make the application more powerful I'm using redux as state manager. When app loading the store receive the initial state of the application.
+
+#AjaxComponent with loader
+
+AjaxComponent is a great example of [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html). I have wrapped logic for ajax calls into small HOC function.
+When I would like to add to component data fetching I just wrapped it into the AjaxComponent function. Before component load on the screen, it will receive a data from Umbraco. I have created that function for Container components listed as Route entries in [App.js](https://github.com/dzolu/UmbracoWithReactJs/blob/master/UmbracoWithReactJs/app/src/App.js). When data is received I'm dispatching action updateContent which update the content in the redux store and load component instead of the loader
+
+
+
+## Backe-end 
 
 ### [Controllers - the layer between Umbraco and ReactJs](https://github.com/dzolu/UmbracoWithReactJs/tree/master/UmbracoWithReactJs/Controllers)
 
@@ -41,7 +60,4 @@ Happy to hear from you. The project will be extended with an example of unit tes
 
 
 ## License MIT
-Copyright 2018 Tomasz Koszkul
-
-
-
+Copyright 2017 Tomasz Koszkul
