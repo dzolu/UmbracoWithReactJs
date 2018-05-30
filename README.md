@@ -1,7 +1,7 @@
 # Umbraco ReactJs Application 
 
 Power full the CMS on back-end and Single page application created with React Js on the front-end
-
+![Live demo screenshot](http://ktinvestment.nazwa.pl/githubimage/umbracowithreact.jpg "Live demo screenshot")
 
 ## What is this?
 This is the default Umbraco startekit reimagined as a badass single-page app, powered by React. It's an example of how Umbraco and React can come together beautifully.
