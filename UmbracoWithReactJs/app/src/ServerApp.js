@@ -8,10 +8,9 @@ import {
 import configureStore from "./store/configureStore";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer"
-
-
-
 import PropTypes from "prop-types";
+import MobileNav from "./presentationComponents/MobileNav";
+import Header from "./presentationComponents/Header";
 
 const App = (props) => {
     const store = configureStore(props.masterModel.InitialState);
@@ -20,7 +19,8 @@ const App = (props) => {
         <Provider store={store}>
             <Router  location={props.masterModel.InitialState.Request.Location}>
                 <div>
-                    <TopNavigation topNavigation={props.masterModel.TopNavigation}/>
+                    <MobileNav topNavigation={props.masterModel.TopNavigation}/>
+                    <Header topNavigation={props.masterModel.TopNavigation}/>
                     <main>
                         <div>
                             <Route path="/" component={HomeContainer} exact></Route>

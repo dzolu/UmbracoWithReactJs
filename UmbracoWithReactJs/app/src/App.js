@@ -5,7 +5,8 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import configureStore from "./store/configureStore";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer";
-import TopNavigation from "./presentationComponents/TopNavigation";
+import Header from "./presentationComponents/Header";
+import MobileNav from "./presentationComponents/MobileNav";
 const App = (props) => {
     const store = configureStore(props.masterModel.InitialState);
     
@@ -13,7 +14,8 @@ const App = (props) => {
         <Provider store={store}>
             <Router>
                 <div>
-                    <TopNavigation topNavigation={props.masterModel.TopNavigation}/>
+                   <MobileNav topNavigation={props.masterModel.TopNavigation}/>
+                    <Header topNavigation={props.masterModel.TopNavigation}/>
                     <main>
                         <div>
                             <Route path="/" component={HomeContainer} exact></Route>

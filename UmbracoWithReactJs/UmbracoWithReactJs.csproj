@@ -578,8 +578,10 @@
     <Content Include="app\src\containerComponents\TopNavigationContainer.jsx" />
     <Content Include="app\src\presentationComponents\Content.jsx" />
     <Content Include="app\src\presentationComponents\FooterHome.jsx" />
+    <Content Include="app\src\presentationComponents\Header.jsx" />
     <Content Include="app\src\presentationComponents\Hero.jsx" />
     <Content Include="app\src\presentationComponents\Home.jsx" />
+    <Content Include="app\src\presentationComponents\MobileNav.jsx" />
     <Content Include="app\src\presentationComponents\TopNavigation.jsx" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />

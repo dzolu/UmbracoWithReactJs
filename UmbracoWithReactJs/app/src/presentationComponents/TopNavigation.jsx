@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const TopNavigation = (props) => {
     return (
         props.topNavigation.map(item=>{
-            return  <Link key={item.Id} to={item.Url}>{item.Name}</Link>
-        })
+                return  <NavLink to={item.Url} className="nav-link" key={item.Id} activeClassName="navi-link--active">{item.Name}</NavLink>
+            })
+         
     )
 };
 
