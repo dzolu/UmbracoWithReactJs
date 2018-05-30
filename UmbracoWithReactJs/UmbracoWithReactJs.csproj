@@ -575,10 +575,14 @@
     <Content Include="app\build\static\js\server.js.map" />
     <Content Include="app\build\static\media\default_index.88827167.ejs" />
     <Content Include="app\src\containerComponents\HomeContainer.jsx" />
+    <Content Include="app\src\containerComponents\TopNavigationContainer.jsx" />
     <Content Include="app\src\presentationComponents\Content.jsx" />
     <Content Include="app\src\presentationComponents\FooterHome.jsx" />
+    <Content Include="app\src\presentationComponents\Header.jsx" />
     <Content Include="app\src\presentationComponents\Hero.jsx" />
     <Content Include="app\src\presentationComponents\Home.jsx" />
+    <Content Include="app\src\presentationComponents\MobileNav.jsx" />
+    <Content Include="app\src\presentationComponents\TopNavigation.jsx" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
     <Content Include="App_Data\Logs\UmbracoTraceLog.TOMASZKOSZK3BB6.txt" />
@@ -740,6 +744,7 @@
     <Compile Include="Model Adapter\BlogModelAdapter.cs" />
     <Compile Include="Model Adapter\BlogPostModelAdapter.cs" />
     <Compile Include="Model Adapter\ContactModelAdpater.cs" />
+    <Compile Include="Model Adapter\ContentModelAdapter.cs" />
     <Compile Include="Model Adapter\ContentPageModelAdapter.cs" />
     <Compile Include="Model Adapter\DetailsModelAdapter.cs" />
     <Compile Include="Model Adapter\FeatureModelAdapter.cs" />
@@ -772,7 +777,6 @@
     <Compile Include="Models\InitialState.cs" />
     <Compile Include="Models\MasterModel.cs" />
     <Compile Include="Models\MetaDataModel.cs" />
-    <Compile Include="Models\NavigationModel.cs" />
     <Compile Include="Models\PeopleModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Models\ProductDetailsModel.cs" />

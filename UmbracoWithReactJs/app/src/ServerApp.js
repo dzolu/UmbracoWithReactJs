@@ -8,19 +8,23 @@ import {
 import configureStore from "./store/configureStore";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer"
-
-
-
 import PropTypes from "prop-types";
+import MobileNav from "./presentationComponents/MobileNav";
+import Header from "./presentationComponents/Header";
 
 const App = (props) => {
-    const store = configureStore(props.initialState);
+    const store = configureStore(props.masterModel.InitialState);
+   
     return (
         <Provider store={store}>
-            <Router  location={props.initialState.Request.Location}>
+            <Router  location={props.masterModel.InitialState.Request.Location}>
                 <div>
+                    <MobileNav topNavigation={props.masterModel.TopNavigation}/>
+                    <Header topNavigation={props.masterModel.TopNavigation}/>
                     <main>
-                        <Route path="/" component={HomeContainer} exact></Route>
+                        <div>
+                            <Route path="/" component={HomeContainer} exact></Route>
+                        </div>
                     </main>
                 </div>
             </Router>
@@ -30,7 +34,7 @@ const App = (props) => {
 };
 
 App.propTypes={
-    initialState: PropTypes.object.isRequired
+    masterModel: PropTypes.object.isRequired
 };
 
 

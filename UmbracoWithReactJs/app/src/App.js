@@ -5,16 +5,24 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import configureStore from "./store/configureStore";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer";
+import Header from "./presentationComponents/Header";
+import MobileNav from "./presentationComponents/MobileNav";
 const App = (props) => {
-    const store = configureStore(props.initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+    const store = configureStore(props.masterModel.InitialState);
+    
     return (
         <Provider store={store}>
             <Router>
-                <main>
-                    <div>
-                        <Route path="/" component={HomeContainer} exact></Route>
-                    </div>
-                </main>
+                <div>
+                   <MobileNav topNavigation={props.masterModel.TopNavigation}/>
+                    <Header topNavigation={props.masterModel.TopNavigation}/>
+                    <main>
+                        <div>
+                            <Route path="/" component={HomeContainer} exact></Route>
+                        </div>
+                    </main>
+                </div>
+                
             </Router>
 
         </Provider>
@@ -24,7 +32,7 @@ const App = (props) => {
 };
 
 App.propTypes={
-    initialState: PropTypes.object.isRequired
+    masterModel: PropTypes.object.isRequired
 };
 
 export default App;
