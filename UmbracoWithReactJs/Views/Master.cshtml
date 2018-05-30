@@ -30,7 +30,7 @@
 </head>
 
 <body class="frontpage theme-font-serif theme-color-earth">
-@Html.React("Components.App.default", new {initialState = Model.InitialState})
+@Html.React("Components.App.default", new {masterModel = Model})
 <!-- Javascripts -->
 <script src="/app/build/static/js/main.js"></script>
 @Html.ReactInitJavaScript()

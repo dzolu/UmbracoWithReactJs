@@ -5,16 +5,22 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import configureStore from "./store/configureStore";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer";
+import TopNavigation from "./presentationComponents/TopNavigation";
 const App = (props) => {
-    const store = configureStore(props.initialState);
+    const store = configureStore(props.masterModel.InitialState);
+    
     return (
         <Provider store={store}>
             <Router>
-                <main>
-                    <div>
-                        <Route path="/" component={HomeContainer} exact></Route>
-                    </div>
-                </main>
+                <div>
+                    <TopNavigation topNavigation={props.masterModel.TopNavigation}/>
+                    <main>
+                        <div>
+                            <Route path="/" component={HomeContainer} exact></Route>
+                        </div>
+                    </main>
+                </div>
+                
             </Router>
 
         </Provider>
@@ -24,7 +30,7 @@ const App = (props) => {
 };
 
 App.propTypes={
-    initialState: PropTypes.object.isRequired
+    masterModel: PropTypes.object.isRequired
 };
 
 export default App;
