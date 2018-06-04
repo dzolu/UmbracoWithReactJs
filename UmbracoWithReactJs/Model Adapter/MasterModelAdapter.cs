@@ -17,7 +17,7 @@ namespace UmbracoWithReactJs.Model_Adapter
         {
             return new MasterModel
             {
-                TopNavigation = content.AncestorsOrSelf(1).First().Children().Select(x=>_contentModelAdapter.Adapt(x))
+                TopNavigation = content.AncestorsOrSelf(1).First().Children().Where(x=>x.IsVisible()).Select(x=>_contentModelAdapter.Adapt(x))
             };
         }
     }
