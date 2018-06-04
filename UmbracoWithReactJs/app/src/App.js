@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer";
 import Header from "./presentationComponents/Header";
 import MobileNav from "./presentationComponents/MobileNav";
+import PeopleContainer from "./containerComponents/PeopleContainer";
 const App = (props) => {
     const store = configureStore(props.masterModel.InitialState);
     
@@ -19,6 +20,7 @@ const App = (props) => {
                     <main>
                         <div>
                             <Route path="/" component={HomeContainer} exact></Route>
+                            <Route path="/people" component={PeopleContainer}></Route>
                         </div>
                     </main>
                 </div>

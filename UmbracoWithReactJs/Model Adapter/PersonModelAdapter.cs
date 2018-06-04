@@ -20,6 +20,9 @@ namespace UmbracoWithReactJs.Model_Adapter
         {
             return new PersonModel
             {
+                Name= content.Name,
+                Id= content.Id,
+                Url = content.Url,
                 DetailsModel = _detailsModelAdapter.Adapt(content),
                 Social = _socialModelAdapter.Adapt(content)
 

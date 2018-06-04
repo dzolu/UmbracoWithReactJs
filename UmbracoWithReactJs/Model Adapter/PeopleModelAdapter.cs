@@ -18,7 +18,7 @@ namespace UmbracoWithReactJs.Model_Adapter
         {
             return new PeopleModel
             {
-                Persons = content.Children.Select(x=>_personModelAdapter.Adapt(x))
+                People = content.Children.Select(x=>_personModelAdapter.Adapt(x))
             };
         }
     }

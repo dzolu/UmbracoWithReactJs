@@ -575,6 +575,7 @@
     <Content Include="app\build\static\js\server.js.map" />
     <Content Include="app\build\static\media\default_index.88827167.ejs" />
     <Content Include="app\src\containerComponents\HomeContainer.jsx" />
+    <Content Include="app\src\containerComponents\PeopleContainer.jsx" />
     <Content Include="app\src\containerComponents\TopNavigationContainer.jsx" />
     <Content Include="app\src\presentationComponents\Content.jsx" />
     <Content Include="app\src\presentationComponents\FooterHome.jsx" />
@@ -582,6 +583,9 @@
     <Content Include="app\src\presentationComponents\Hero.jsx" />
     <Content Include="app\src\presentationComponents\Home.jsx" />
     <Content Include="app\src\presentationComponents\MobileNav.jsx" />
+    <Content Include="app\src\presentationComponents\People.jsx" />
+    <Content Include="app\src\presentationComponents\Person.jsx" />
+    <Content Include="app\src\presentationComponents\SeactionHeader.jsx" />
     <Content Include="app\src\presentationComponents\TopNavigation.jsx" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
