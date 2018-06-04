@@ -608,6 +608,7 @@
     <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.TOMASZKOSZK3BB6.list" />
     <Content Include="App_Data\umbraco.config" />
     <Content Include="App_Data\Umbraco.sdf" />
+    <Content Include="build.bat" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
