@@ -22,6 +22,7 @@ const AjaxComponent = (WrappedComponent) => {
                     method: 'get',
                     headers: {'X-Requested-With': 'XMLHttpRequest'}
                 }).then((response) => {
+                    this.props.contentActions.updateMetaData(response.data.MetaData);
                     this.props.contentActions.updateContent(response.data.Content);
                     this.setState({
                         isLoading: false
