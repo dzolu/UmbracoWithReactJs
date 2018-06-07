@@ -583,6 +583,7 @@
     <Content Include="app\src\presentationComponents\Hero.jsx" />
     <Content Include="app\src\presentationComponents\Home.jsx" />
     <Content Include="app\src\presentationComponents\MobileNav.jsx" />
+    <Content Include="app\src\presentationComponents\pageNotFound.jsx" />
     <Content Include="app\src\presentationComponents\People.jsx" />
     <Content Include="app\src\presentationComponents\Person.jsx" />
     <Content Include="app\src\presentationComponents\SeactionHeader.jsx" />
