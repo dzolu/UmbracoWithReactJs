@@ -7,18 +7,20 @@ import * as contentActions from "./../actions/contentActions"
 import {bindActionCreators} from "redux";
 
 const AjaxComponent = (WrappedComponent) => {
-    const  ComponentWithLoader = WithLoading(WrappedComponent);
-     class AjaxContainer extends Component {
+    const ComponentWithLoader = WithLoading(WrappedComponent);
+
+    class AjaxContainer extends Component {
         constructor(props) {
             super(props);
             this.state = {
                 isLoading: props.isAjaxRequest
             }
         }
+
         componentDidMount() {
             if (this.props.isAjaxRequest) {
                 axios.request({
-                    url:this.props.location.pathname,
+                    url: this.props.location.pathname,
                     method: 'get',
                     headers: {'X-Requested-With': 'XMLHttpRequest'}
                 }).then((response) => {
@@ -27,32 +29,34 @@ const AjaxComponent = (WrappedComponent) => {
                     this.setState({
                         isLoading: false
                     })
-                }); 
+                });
                 return;
             }
-        this.props.ajaxContainerActions.updateAjaxRequestFlag(true);
+            this.props.ajaxContainerActions.updateAjaxRequestFlag(true);
         }
 
         render() {
-             return <ComponentWithLoader isLoading={this.state.isLoading} {...this.props}/>;
+            return <ComponentWithLoader isLoading={this.state.isLoading} {...this.props}/>;
         }
     }
+
     function mapStateToProps(state) {
         return {
             isAjaxRequest: state.Request.IsAjaxRequest,
+            id: state.Content.Id,
+            location: state.location
         }
     }
+
     function mapDispatchToProps(dispatch) {
         return {
             ajaxContainerActions: bindActionCreators(ajaxContainerActions, dispatch),
-            contentActions :bindActionCreators(contentActions,dispatch)
+            contentActions: bindActionCreators(contentActions, dispatch)
         }
     }
-    return connect(mapStateToProps,mapDispatchToProps)(AjaxContainer);
+
+    return connect(mapStateToProps, mapDispatchToProps)(AjaxContainer);
 };
-
-
-
 
 
 export default AjaxComponent;
