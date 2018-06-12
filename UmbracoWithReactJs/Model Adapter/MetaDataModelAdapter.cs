@@ -13,8 +13,9 @@ namespace UmbracoWithReactJs.Model_Adapter
             {
                 PageName = content.Name,
                 PageId = content.Id,
-                PageTitle = content.GetPropertyValue<string>("pageTitle"),
-                SiteDescription = content.GetPropertyValue<string>("siteDescription")
+                PageTitle = content.GetPropertyValue<string>("pageTitle")?? "",
+                SiteDescription = content.GetPropertyValue<string>("seoMetaDescription") ?? "",
+                PageURL = content.Url
             };
         }
     }
