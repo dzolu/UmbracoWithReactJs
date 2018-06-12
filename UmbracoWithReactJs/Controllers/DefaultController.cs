@@ -8,23 +8,23 @@ using ActionResult = System.Web.Mvc.ActionResult;
 
 namespace UmbracoWithReactJs.Controllers
 {
-    public class DefaultController :  Umbraco.Web.Mvc.RenderMvcController
+    public class DefaultController : Umbraco.Web.Mvc.RenderMvcController
     {
         private readonly IModelAdapter<MasterModel> _masterModelAdapter;
-        protected readonly IModelAdapter<InitialState> InitialStateModelAdapter;
+        private readonly IModelAdapter<InitialState> _initialStateModelAdapter;
 
 
         public DefaultController(IModelAdapter<MasterModel> masterModelAdapter,
             IModelAdapter<InitialState> initialStateModelAdapter)
         {
             _masterModelAdapter = masterModelAdapter;
-            InitialStateModelAdapter = initialStateModelAdapter;
+            _initialStateModelAdapter = initialStateModelAdapter;
         }
 
         public override ActionResult Index(RenderModel model)
         {
             var isAjaxRequest = Request.IsAjaxRequest();
-            return isAjaxRequest  ?  AjaxRequest(model.Content) : NonAjaxRequest(model.Content);
+            return isAjaxRequest ? AjaxRequest(model.Content) : NonAjaxRequest(model.Content);
         }
 
 
@@ -37,17 +37,23 @@ namespace UmbracoWithReactJs.Controllers
 
         private ActionResult NonAjaxRequest(IPublishedContent content)
         {
-            var initialState = CreateInitialState(content);   
+            var initialState = CreateInitialState(content);
             var masterInitialState = _masterModelAdapter.Adapt(content);
             masterInitialState.InitialState = initialState;
             return View("Master", masterInitialState);
         }
-       
+
         protected virtual InitialState CreateInitialState(IPublishedContent content)
         {
-            var initialState = InitialStateModelAdapter.Adapt(content);
+            var initialState = _initialStateModelAdapter.Adapt(content);
             return initialState;
         }
 
+        protected InitialState AdaptInitialState(IPublishedContent content, ContentModel pageContent)
+        {
+            var initialState = _initialStateModelAdapter.Adapt(content);
+            initialState.Content = pageContent;
+            return initialState;
+        }
     }
 }
