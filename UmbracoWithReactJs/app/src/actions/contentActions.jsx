@@ -7,3 +7,7 @@ export function updateContent(content) {
 export function updateMetaData(metaData) {
     return{type:Types.UPDATE_METADATA, metaData}
 }
+
+export function updateRequest(request) {
+    return{type:Types.UPDATE_REQUEST, request}
+}

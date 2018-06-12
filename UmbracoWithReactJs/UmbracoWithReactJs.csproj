@@ -588,6 +588,10 @@
     <Content Include="app\src\presentationComponents\Person.jsx" />
     <Content Include="app\src\presentationComponents\SeactionHeader.jsx" />
     <Content Include="app\src\presentationComponents\TopNavigation.jsx" />
+    <Content Include="app\src\reducers\contentReducer.jsx" />
+    <Content Include="app\src\reducers\metaDataReducer.jsx" />
+    <Content Include="app\src\reducers\requestReducer.jsx" />
+    <Content Include="app\src\Services\DispatchService.js" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
     <Content Include="App_Data\Logs\UmbracoTraceLog.TOMASZKOSZK3BB6.txt" />
@@ -664,7 +668,6 @@
     <Content Include="app\src\actions\actionTypes.jsx" />
     <Content Include="app\src\actions\ajaxContainerActions.js" />
     <Content Include="app\src\actions\contentActions.jsx" />
-    <Content Include="app\src\actions\requestActions.js" />
     <Content Include="app\src\App.css" />
     <Content Include="app\src\App.js" />
     <Content Include="app\src\App.test.js" />
@@ -673,10 +676,7 @@
     <Content Include="app\src\HOC\AjaxComponent.jsx" />
     <Content Include="app\src\HOC\WithLoading.jsx" />
     <Content Include="app\src\index.js" />
-    <Content Include="app\src\reducers\contentReducer.jsx" />
     <Content Include="app\src\reducers\index.jsx" />
-    <Content Include="app\src\reducers\metaDataReducer.jsx" />
-    <Content Include="app\src\reducers\RequestReducer.jsx" />
     <Content Include="app\src\registerServiceWorker.js" />
     <Content Include="app\src\server.js" />
     <Content Include="app\src\ServerApp.js" />
