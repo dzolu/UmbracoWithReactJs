@@ -73,7 +73,7 @@ namespace UmbracoWithReactJs
             builder.RegisterType<ProductModelAdapter>().As<IModelAdapter<ProductModel>>();
             builder.RegisterType<ProductsModelAdapter>().As<IModelAdapter<ProductsModel>>();
             builder.RegisterType<SocialModelAdapter>().As<IModelAdapter<SocialModel>>();
-            builder.RegisterType<ContentModelAdapter>().As< IModelAdapter<ContentModel>>();
+   
             
             
             
