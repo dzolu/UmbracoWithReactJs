@@ -4,7 +4,7 @@ using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
 namespace UmbracoWithReactJs.Model_Adapter
 {
-    public  class PersonModelAdapter:IModelAdapter<PersonModel>
+    public class PersonModelAdapter : IModelAdapter<PersonModel>
     {
         private readonly IModelAdapter<SocialModel> _socialModelAdapter;
         private readonly IModelAdapter<DetailsModel> _detailsModelAdapter;
@@ -20,10 +20,9 @@ namespace UmbracoWithReactJs.Model_Adapter
         {
             return new PersonModel
             {
-                
+                Name = content.Name,
                 DetailsModel = _detailsModelAdapter.Adapt(content),
                 Social = _socialModelAdapter.Adapt(content)
-
             };
         }
     }
