@@ -624,6 +624,7 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\umbraco-starterkit-style.css" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
@@ -682,6 +683,8 @@
     <Content Include="app\src\registerServiceWorker.js" />
     <Content Include="app\src\server.js" />
     <Content Include="app\src\ServerApp.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
     <Content Include="start.bat" />
     <Content Include="Views\Master.cshtml" />
