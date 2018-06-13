@@ -1,6 +1,6 @@
 ﻿namespace UmbracoWithReactJs.Models
 {
-    public class MetaDataModel
+    public class MetaData
     {
         public string PageName { get; set; }
         public int PageId { get; set; }

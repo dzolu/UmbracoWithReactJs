@@ -4,12 +4,12 @@ using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
 namespace UmbracoWithReactJs.Model_Adapter
 {
-    public class InitialStateModelAdapter:IModelAdapter<InitialState>
+    public class InitialStateModelAdapter : IModelAdapter<InitialState>
     {
-        private readonly IModelAdapter<MetaDataModel> _metaModelAdapter;
+        private readonly IModelAdapter<MetaData> _metaModelAdapter;
         private readonly IModelAdapter<RequestModel> _requestModelAdapter;
 
-        public InitialStateModelAdapter(IModelAdapter<MetaDataModel> metaModelAdapter,
+        public InitialStateModelAdapter(IModelAdapter<MetaData> metaModelAdapter,
             IModelAdapter<RequestModel> requestModelAdapter)
         {
             _metaModelAdapter = metaModelAdapter;
@@ -19,7 +19,7 @@ namespace UmbracoWithReactJs.Model_Adapter
         public InitialState Adapt(IPublishedContent content)
         {
             return new InitialState
-            {              
+            {
                 MetaData = _metaModelAdapter.Adapt(content),
                 Request = _requestModelAdapter.Adapt(content)
             };

@@ -574,20 +574,31 @@
     <Content Include="app\build\static\js\server.js" />
     <Content Include="app\build\static\js\server.js.map" />
     <Content Include="app\build\static\media\default_index.88827167.ejs" />
-    <Content Include="app\src\containerComponents\HomeContainer.jsx" />
-    <Content Include="app\src\containerComponents\PeopleContainer.jsx" />
-    <Content Include="app\src\containerComponents\TopNavigationContainer.jsx" />
-    <Content Include="app\src\presentationComponents\Content.jsx" />
-    <Content Include="app\src\presentationComponents\FooterHome.jsx" />
-    <Content Include="app\src\presentationComponents\Header.jsx" />
-    <Content Include="app\src\presentationComponents\Hero.jsx" />
-    <Content Include="app\src\presentationComponents\Home.jsx" />
-    <Content Include="app\src\presentationComponents\MobileNav.jsx" />
-    <Content Include="app\src\presentationComponents\pageNotFound.jsx" />
-    <Content Include="app\src\presentationComponents\People.jsx" />
-    <Content Include="app\src\presentationComponents\Person.jsx" />
-    <Content Include="app\src\presentationComponents\SeactionHeader.jsx" />
-    <Content Include="app\src\presentationComponents\TopNavigation.jsx" />
+    <Content Include="app\src\containers\Head.jsx" />
+    <Content Include="app\src\containers\HomeContainer.jsx" />
+    <Content Include="app\src\containers\PeopleContainer.jsx" />
+    <Content Include="app\src\containers\TopNavigationContainer.jsx" />
+    <Content Include="app\src\components\Content.jsx" />
+    <Content Include="app\src\components\FooterHome.jsx" />
+    <Content Include="app\src\components\Header.jsx" />
+    <Content Include="app\src\components\Hero.jsx" />
+    <Content Include="app\src\components\Home.jsx" />
+    <Content Include="app\src\components\MobileNav.jsx" />
+    <Content Include="app\src\components\pageNotFound.jsx" />
+    <Content Include="app\src\components\People.jsx" />
+    <Content Include="app\src\components\Person.jsx" />
+    <Content Include="app\src\components\SeactionHeader.jsx" />
+    <Content Include="app\src\components\TopNavigation.jsx" />
+    <Content Include="app\src\redux\actions\actionTypes.jsx" />
+    <Content Include="app\src\redux\actions\ajaxContainerActions.js" />
+    <Content Include="app\src\redux\actions\contentActions.jsx" />
+    <Content Include="app\src\redux\reducers\contentReducer.jsx" />
+    <Content Include="app\src\redux\reducers\index.jsx" />
+    <Content Include="app\src\redux\reducers\metaDataReducer.jsx" />
+    <Content Include="app\src\redux\reducers\requestReducer.jsx" />
+    <Content Include="app\src\redux\store\configureStore.jsx" />
+    <Content Include="app\src\redux\store\configureStoreServer.jsx" />
+    <Content Include="app\src\Services\DispatchService.js" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
     <Content Include="App_Data\Logs\UmbracoTraceLog.TOMASZKOSZK3BB6.txt" />
@@ -614,6 +625,7 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\umbraco-starterkit-style.css" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
@@ -661,10 +673,6 @@
     <Content Include="app\scripts\start.js" />
     <Content Include="app\scripts\test.js" />
     <Content Include="app\src\.DS_Store" />
-    <Content Include="app\src\actions\actionTypes.jsx" />
-    <Content Include="app\src\actions\ajaxContainerActions.js" />
-    <Content Include="app\src\actions\contentActions.jsx" />
-    <Content Include="app\src\actions\requestActions.js" />
     <Content Include="app\src\App.css" />
     <Content Include="app\src\App.js" />
     <Content Include="app\src\App.test.js" />
@@ -673,14 +681,11 @@
     <Content Include="app\src\HOC\AjaxComponent.jsx" />
     <Content Include="app\src\HOC\WithLoading.jsx" />
     <Content Include="app\src\index.js" />
-    <Content Include="app\src\reducers\contentReducer.jsx" />
-    <Content Include="app\src\reducers\index.jsx" />
-    <Content Include="app\src\reducers\metaDataReducer.jsx" />
-    <Content Include="app\src\reducers\RequestReducer.jsx" />
     <Content Include="app\src\registerServiceWorker.js" />
     <Content Include="app\src\server.js" />
     <Content Include="app\src\ServerApp.js" />
-    <Content Include="app\src\store\configureStore.jsx" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
     <Content Include="start.bat" />
     <Content Include="Views\Master.cshtml" />
@@ -781,7 +786,7 @@
     <Compile Include="Models\ImageModel.cs" />
     <Compile Include="Models\InitialState.cs" />
     <Compile Include="Models\MasterModel.cs" />
-    <Compile Include="Models\MetaDataModel.cs" />
+    <Compile Include="Models\MetaData.cs" />
     <Compile Include="Models\PeopleModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Models\ProductDetailsModel.cs" />
@@ -797,10 +802,11 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\src\redux" />
     <Folder Include="App_Data\packages\created\" />
     <Folder Include="App_Data\TEMP\Install\" />
-    <Folder Include="app\src\containerComponents\" />
-    <Folder Include="app\src\presentationComponents\" />
+    <Folder Include="app\src\containers\" />
+    <Folder Include="app\src\components\" />
     <Folder Include="app\src\styles\" />
   </ItemGroup>
   <ItemGroup>

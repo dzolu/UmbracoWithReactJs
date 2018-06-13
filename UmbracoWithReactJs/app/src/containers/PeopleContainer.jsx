@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux"
 import PropTypes from 'prop-types';
 import AjaxComponent from "../HOC/AjaxComponent";
-import People from "../presentationComponents/People";
+import People from "../components/People";
 
 class PeopleContainer extends Component {
     constructor(props, context) {

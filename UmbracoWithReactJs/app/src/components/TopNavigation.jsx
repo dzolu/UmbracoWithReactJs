@@ -4,10 +4,11 @@ import {NavLink} from "react-router-dom";
 
 const TopNavigation = (props) => {
     return (
-        props.topNavigation.map(item=>{
-                return  <NavLink to={item.Url} className="nav-link" key={item.Id} activeClassName="navi-link--active">{item.Name}</NavLink>
-            })
-         
+        props.topNavigation.map(item => {
+            return <NavLink to={item.PageURL} className="nav-link" key={item.PageId}
+                            activeClassName="navi-link--active">{item.PageName}</NavLink>
+        })
+
     )
 };
 

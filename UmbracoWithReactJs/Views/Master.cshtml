@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,13 +29,13 @@
 </head>
 
 <body class="frontpage theme-font-serif theme-color-earth">
-@Html.React("Components.App.default", new {masterModel = Model})
+@Html.React("Components.App.default", new { masterModel = Model })
 <!-- Javascripts -->
 <script src="/app/build/static/js/main.js"></script>
 @Html.ReactInitJavaScript()
 
 
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="~/scripts/jquery.min.js"></script>
+<script src="~/scripts/bootstrap.min.js"></script>
 </body>
 </html>
