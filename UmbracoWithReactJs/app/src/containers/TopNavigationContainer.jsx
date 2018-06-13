@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux"
 import PropTypes from 'prop-types';
-import TopNavigation from "../presentationComponents/TopNavigation";
+import TopNavigation from "../components/TopNavigation";
 
 const TopNavigationContainer = () => {
     return (

@@ -574,20 +574,20 @@
     <Content Include="app\build\static\js\server.js" />
     <Content Include="app\build\static\js\server.js.map" />
     <Content Include="app\build\static\media\default_index.88827167.ejs" />
-    <Content Include="app\src\containerComponents\HomeContainer.jsx" />
-    <Content Include="app\src\containerComponents\PeopleContainer.jsx" />
-    <Content Include="app\src\containerComponents\TopNavigationContainer.jsx" />
-    <Content Include="app\src\presentationComponents\Content.jsx" />
-    <Content Include="app\src\presentationComponents\FooterHome.jsx" />
-    <Content Include="app\src\presentationComponents\Header.jsx" />
-    <Content Include="app\src\presentationComponents\Hero.jsx" />
-    <Content Include="app\src\presentationComponents\Home.jsx" />
-    <Content Include="app\src\presentationComponents\MobileNav.jsx" />
-    <Content Include="app\src\presentationComponents\pageNotFound.jsx" />
-    <Content Include="app\src\presentationComponents\People.jsx" />
-    <Content Include="app\src\presentationComponents\Person.jsx" />
-    <Content Include="app\src\presentationComponents\SeactionHeader.jsx" />
-    <Content Include="app\src\presentationComponents\TopNavigation.jsx" />
+    <Content Include="app\src\containers\HomeContainer.jsx" />
+    <Content Include="app\src\containers\PeopleContainer.jsx" />
+    <Content Include="app\src\containers\TopNavigationContainer.jsx" />
+    <Content Include="app\src\components\Content.jsx" />
+    <Content Include="app\src\components\FooterHome.jsx" />
+    <Content Include="app\src\components\Header.jsx" />
+    <Content Include="app\src\components\Hero.jsx" />
+    <Content Include="app\src\components\Home.jsx" />
+    <Content Include="app\src\components\MobileNav.jsx" />
+    <Content Include="app\src\components\pageNotFound.jsx" />
+    <Content Include="app\src\components\People.jsx" />
+    <Content Include="app\src\components\Person.jsx" />
+    <Content Include="app\src\components\SeactionHeader.jsx" />
+    <Content Include="app\src\components\TopNavigation.jsx" />
     <Content Include="app\src\redux\actions\actionTypes.jsx" />
     <Content Include="app\src\redux\actions\ajaxContainerActions.js" />
     <Content Include="app\src\redux\actions\contentActions.jsx" />
@@ -801,8 +801,8 @@
     <Folder Include="app\src\redux" />
     <Folder Include="App_Data\packages\created\" />
     <Folder Include="App_Data\TEMP\Install\" />
-    <Folder Include="app\src\containerComponents\" />
-    <Folder Include="app\src\presentationComponents\" />
+    <Folder Include="app\src\containers\" />
+    <Folder Include="app\src\components\" />
     <Folder Include="app\src\styles\" />
   </ItemGroup>
   <ItemGroup>

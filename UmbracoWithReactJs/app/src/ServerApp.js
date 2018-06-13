@@ -7,10 +7,10 @@ import {
 
 import configureStore from "./redux/store/configureStoreServer";
 import {Provider} from "react-redux";
-import HomeContainer from "./containerComponents/HomeContainer"
+import HomeContainer from "./containers/HomeContainer"
 import PropTypes from "prop-types";
-import MobileNav from "./presentationComponents/MobileNav";
-import Header from "./presentationComponents/Header";
+import MobileNav from "./components/MobileNav";
+import Header from "./components/Header";
 
 const App = (props) => {
     const store = configureStore(props.masterModel.InitialState);

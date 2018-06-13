@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import configureStore from "./redux/store/configureStore";
 import {Provider} from "react-redux";
-import HomeContainer from "./containerComponents/HomeContainer";
-import Header from "./presentationComponents/Header";
-import MobileNav from "./presentationComponents/MobileNav";
-import PeopleContainer from "./containerComponents/PeopleContainer";
+import HomeContainer from "./containers/HomeContainer";
+import Header from "./components/Header";
+import MobileNav from "./components/MobileNav";
+import PeopleContainer from "./containers/PeopleContainer";
 
 const App = (props) => {
     const store = configureStore(props.masterModel.InitialState);

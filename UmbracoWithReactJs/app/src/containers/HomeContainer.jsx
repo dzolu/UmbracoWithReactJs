@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux"
 import PropTypes from 'prop-types';
-import Home from "../presentationComponents/Home";
-import * as actions from "./../actions/ajaxContainerActions";
+import Home from "../components/Home";
+import * as actions from "./../redux/actions/ajaxContainerActions";
 import AjaxComponent from "../HOC/AjaxComponent";
 
 class HomeContainer extends Component {
