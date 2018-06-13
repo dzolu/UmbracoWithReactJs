@@ -53,7 +53,7 @@ namespace UmbracoWithReactJs
         
             //Model adapters
             builder.RegisterType<MasterModelAdapter>().As<IModelAdapter<MasterModel>>();
-            builder.RegisterType<MetaDataModelAdapter>().As<IModelAdapter<MetaDataModel>>();     
+            builder.RegisterType<MetaDataModelAdapter>().As<IModelAdapter<MetaData>>();  
             builder.RegisterType<ImageModelAdapter>().As<IModelAdapter<ImageModel>>();  
             builder.RegisterType<InitialStateModelAdapter>().As<IModelAdapter<InitialState>>();            
             builder.RegisterType<RequestModelAdapter>().As<IModelAdapter<RequestModel>>();
@@ -73,7 +73,7 @@ namespace UmbracoWithReactJs
             builder.RegisterType<ProductModelAdapter>().As<IModelAdapter<ProductModel>>();
             builder.RegisterType<ProductsModelAdapter>().As<IModelAdapter<ProductsModel>>();
             builder.RegisterType<SocialModelAdapter>().As<IModelAdapter<SocialModel>>();
-            builder.RegisterType<ContentModelAdapter>().As< IModelAdapter<ContentModel>>();
+   
             
             
             

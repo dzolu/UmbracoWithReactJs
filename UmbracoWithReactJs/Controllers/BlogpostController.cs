@@ -18,9 +18,7 @@ namespace UmbracoWithReactJs.Controllers
         protected override InitialState CreateInitialState(IPublishedContent content)
         {
             var blogPostModel = _blogpostModelAdapter.Adapt(content);
-            var initialState = InitialStateModelAdapter.Adapt(content);
-            initialState.Content = blogPostModel;
-            return initialState;
+            return AdaptInitialState(content, blogPostModel);
         }
     }
 }

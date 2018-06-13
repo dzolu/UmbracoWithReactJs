@@ -8,16 +8,20 @@ namespace UmbracoWithReactJs.Model_Adapter
 {
     public class MasterModelAdapter : IModelAdapter<MasterModel>
     {
-        private readonly IModelAdapter<ContentModel> _contentModelAdapter;
-        public MasterModelAdapter(IModelAdapter<ContentModel> contentModelAdapter)
+        private readonly IModelAdapter<MetaData> _metaDataModelAdapter;
+
+
+        public MasterModelAdapter(IModelAdapter<MetaData> metaDataModelAdapter)
         {
-            _contentModelAdapter = contentModelAdapter;
+            _metaDataModelAdapter = metaDataModelAdapter;
         }
+
         public MasterModel Adapt(IPublishedContent content)
         {
             return new MasterModel
             {
-                TopNavigation = content.AncestorsOrSelf(1).First().Children().Select(x=>_contentModelAdapter.Adapt(x))
+                TopNavigation = content.AncestorsOrSelf(1).First().Children().Where(x => x.IsVisible())
+                    .Select(x => _metaDataModelAdapter.Adapt(x))
             };
         }
     }
