@@ -8,14 +8,15 @@ import HomeContainer from "./containerComponents/HomeContainer";
 import Header from "./presentationComponents/Header";
 import MobileNav from "./presentationComponents/MobileNav";
 import PeopleContainer from "./containerComponents/PeopleContainer";
+
 const App = (props) => {
     const store = configureStore(props.masterModel.InitialState);
-    
+
     return (
         <Provider store={store}>
             <Router>
                 <div>
-                   <MobileNav topNavigation={props.masterModel.TopNavigation}/>
+                    <MobileNav topNavigation={props.masterModel.TopNavigation}/>
                     <Header topNavigation={props.masterModel.TopNavigation}/>
                     <main>
                         <div>
@@ -24,7 +25,7 @@ const App = (props) => {
                         </div>
                     </main>
                 </div>
-                
+
             </Router>
 
         </Provider>
@@ -33,7 +34,7 @@ const App = (props) => {
     );
 };
 
-App.propTypes={
+App.propTypes = {
     masterModel: PropTypes.object.isRequired
 };
 

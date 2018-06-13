@@ -592,6 +592,7 @@
     <Content Include="app\src\reducers\metaDataReducer.jsx" />
     <Content Include="app\src\reducers\requestReducer.jsx" />
     <Content Include="app\src\Services\DispatchService.js" />
+    <Content Include="app\src\store\configureStoreServer.jsx" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
     <Content Include="App_Data\Logs\UmbracoTraceLog.TOMASZKOSZK3BB6.txt" />
@@ -781,7 +782,7 @@
     <Compile Include="Models\ImageModel.cs" />
     <Compile Include="Models\InitialState.cs" />
     <Compile Include="Models\MasterModel.cs" />
-    <Compile Include="Models\MetaDataModel.cs" />
+    <Compile Include="Models\MetaData.cs" />
     <Compile Include="Models\PeopleModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Models\ProductDetailsModel.cs" />

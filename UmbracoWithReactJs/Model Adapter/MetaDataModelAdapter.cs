@@ -5,19 +5,18 @@ using UmbracoWithReactJs.Model_Adapter.Interafaces;
 
 namespace UmbracoWithReactJs.Model_Adapter
 {
-    public class MetaDataModelAdapter:IModelAdapter<MetaDataModel>
+    public class MetaDataModelAdapter : IModelAdapter<MetaData>
     {
-        public MetaDataModel Adapt(IPublishedContent content)
+        public MetaData Adapt(IPublishedContent content)
         {
-            return new MetaDataModel
+            return new MetaData
             {
                 PageName = content.Name,
                 PageId = content.Id,
-                PageTitle = content.GetPropertyValue<string>("pageTitle")?? "",
+                PageTitle = content.GetPropertyValue<string>("pageTitle") ?? "",
                 SiteDescription = content.GetPropertyValue<string>("seoMetaDescription") ?? "",
                 PageURL = content.Url
             };
         }
     }
-  
 }

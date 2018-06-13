@@ -4,14 +4,14 @@ import {bindActionCreators} from "redux"
 import PropTypes from 'prop-types';
 import TopNavigation from "../presentationComponents/TopNavigation";
 
-const TopNavigationContainer=()=>{
-        return (
-            <TopNavigation {...this.props}/>
-        )
+const TopNavigationContainer = () => {
+    return (
+        <TopNavigation {...this.props}/>
+    )
 
 };
 TopNavigation.Container.propTypes = {
-    navigation :PropTypes.array.isRequired
+    navigation: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownPros) {

@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import WithLoading from "./WithLoading";
 import axios from "axios";
 import {connect} from "react-redux";
-import * as ajaxContainerActions from "../redux/actions/ajaxContainerActions";
-import * as contentActions from "../redux/actions/contentActions"
+import * as ajaxContainerActions from "../actions/ajaxContainerActions";
+import * as contentActions from "../actions/contentActions"
 import {bindActionCreators} from "redux";
 import DispatchService from "../Services/DispatchService"
 
