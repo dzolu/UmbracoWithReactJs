@@ -8,6 +8,7 @@ import HomeContainer from "./containers/HomeContainer";
 import Header from "./components/Header";
 import MobileNav from "./components/MobileNav";
 import PeopleContainer from "./containers/PeopleContainer";
+import Head from "./containers/Head";
 
 const App = (props) => {
     const store = configureStore(props.masterModel.InitialState);
@@ -16,18 +17,15 @@ const App = (props) => {
         <Provider store={store}>
             <Router>
                 <div>
+                    <Head/>
                     <MobileNav topNavigation={props.masterModel.TopNavigation}/>
                     <Header topNavigation={props.masterModel.TopNavigation}/>
                     <main>
-                        <div>
-                            <Route path="/" component={HomeContainer} exact></Route>
-                            <Route path="/people" component={PeopleContainer}></Route>
-                        </div>
+                        <Route path="/" component={HomeContainer} exact></Route>
+                        <Route path="/people" component={PeopleContainer}></Route>
                     </main>
                 </div>
-
             </Router>
-
         </Provider>
 
 
