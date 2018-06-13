@@ -5,7 +5,7 @@ import {
     Route
 } from 'react-router';
 
-import configureStore from "./store/configureStoreServer";
+import configureStore from "./redux/store/configureStoreServer";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer"
 import PropTypes from "prop-types";

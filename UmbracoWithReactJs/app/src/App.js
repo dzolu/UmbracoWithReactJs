@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import PropTypes from "prop-types";
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import configureStore from "./store/configureStore";
+import configureStore from "./redux/store/configureStore";
 import {Provider} from "react-redux";
 import HomeContainer from "./containerComponents/HomeContainer";
 import Header from "./presentationComponents/Header";
